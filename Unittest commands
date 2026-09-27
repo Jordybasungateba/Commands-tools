@@ -1,0 +1,10 @@
+** Execute test unitaire **
+python -m unittest discover -v
+
+** Execute test unitaire avec generation du rapport de coverture **
+ - coverage run -m unittest discover -v
+
+** Obtenir le rapport de couverture du code **
+ - coverage report -m
+ - coverage report --fail-under=valeur  # pour verifier un certain pourcentage de couverture des tests , utile dans une CI pour preciser un seuil acceptable
+
