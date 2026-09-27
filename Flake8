@@ -1,0 +1,21 @@
+
+** Recherche  des erreurs critiques **
+
+flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+. → analyse le projet courant
+--count → compte les erreurs
+--select=... → vérifie certaines erreurs importantes
+--show-source → affiche le code concerné
+--statistics → affiche les statistiques
+
+
+** vérifie davantage la qualité et la lisibilité du code ** 
+
+flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
+. → analyse le projet
+--count → compte les erreurs
+--max-complexity=10 → limite la complexité des fonctions à 10
+--max-line-length=127 → limite les lignes à 127 caractères
+--statistics → affiche les statistiques
+
+
